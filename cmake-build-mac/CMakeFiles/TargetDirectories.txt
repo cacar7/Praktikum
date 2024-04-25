@@ -1,0 +1,3 @@
+/Users/cemacar/Developer/BS/Praktikum/cmake-build-mac/CMakeFiles/Praktikum.dir
+/Users/cemacar/Developer/BS/Praktikum/cmake-build-mac/CMakeFiles/edit_cache.dir
+/Users/cemacar/Developer/BS/Praktikum/cmake-build-mac/CMakeFiles/rebuild_cache.dir

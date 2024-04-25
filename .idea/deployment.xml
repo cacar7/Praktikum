@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="Mac">
+        <serverdata>
+          <mappings>
+            <mapping deploy="Developer/BS/Praktikum" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root-Docker (3780d123-f2f1-4c25-9c2d-dfb2c99aafc4)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/PrakBS24" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-mac" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-root-docker" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

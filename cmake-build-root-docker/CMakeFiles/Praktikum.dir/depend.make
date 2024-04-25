@@ -3,5 +3,5 @@
 
 CMakeFiles/Praktikum.dir/main.c.o: ../main.c
 
-CMakeFiles/Praktikum.dir/test.c.o: ../test.c
+CMakeFiles/Praktikum.dir/p1.c.o: ../p1.c
 

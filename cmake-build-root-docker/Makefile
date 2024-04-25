@@ -150,6 +150,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/main.c.s
 .PHONY : main.c.s
 
+p1.o: p1.c.o
+
+.PHONY : p1.o
+
+# target to build an object file
+p1.c.o:
+	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/p1.c.o
+.PHONY : p1.c.o
+
+p1.i: p1.c.i
+
+.PHONY : p1.i
+
+# target to preprocess a source file
+p1.c.i:
+	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/p1.c.i
+.PHONY : p1.c.i
+
+p1.s: p1.c.s
+
+.PHONY : p1.s
+
+# target to generate assembly for a file
+p1.c.s:
+	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/p1.c.s
+.PHONY : p1.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... p1.o"
+	@echo "... p1.i"
+	@echo "... p1.s"
 .PHONY : help
 
 

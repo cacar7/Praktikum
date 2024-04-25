@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/Praktikum.dir/main.c.o  -o Praktikum 
+/usr/bin/cc -g   CMakeFiles/Praktikum.dir/main.c.o CMakeFiles/Praktikum.dir/p1.c.o  -o Praktikum 

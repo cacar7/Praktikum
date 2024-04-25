@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/tmp/PrakBS24/main.c" "/tmp/PrakBS24/cmake-build-root-docker/CMakeFiles/Praktikum.dir/main.c.o"
+  "/tmp/PrakBS24/p1.c" "/tmp/PrakBS24/cmake-build-root-docker/CMakeFiles/Praktikum.dir/p1.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -81,6 +81,9 @@
 		<Unit filename="/tmp/PrakBS24/main.c">
 			<Option target="Praktikum"/>
 		</Unit>
+		<Unit filename="/tmp/PrakBS24/p1.c">
+			<Option target="Praktikum"/>
+		</Unit>
 		<Unit filename="/tmp/PrakBS24/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

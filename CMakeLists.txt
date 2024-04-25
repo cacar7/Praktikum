@@ -3,4 +3,5 @@ project(Praktikum C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Praktikum main.c)
+add_executable(Praktikum main.c
+        p1.c)

@@ -50,6 +50,8 @@ int main() {
     }
 
     printf("Server listening on port %d\n", PORT);
+    printf("Welcome to Key-Value Store Server Team 6\n");
+    printf("Enter QUIT to stop the server\n\n");
 
     while (1) {
         clientSocket = accept(serverSocket, (struct sockaddr *)&address, (socklen_t*)&addrlen);
@@ -57,6 +59,8 @@ int main() {
             perror("Accept");
             continue;
         }
+
+        printf("New client connected. Client socket: %d\n", clientSocket);
 
         if (fork() == 0) { // Child process
             close(serverSocket);
@@ -73,9 +77,11 @@ int main() {
                 }
 
                 buffer[readBytes] = '\0';
+                printf("Received command from client %d: %s\n", clientSocket, buffer);
                 processCommand(clientSocket, buffer);
             }
 
+            printf("Client %d disconnected.\n", clientSocket);
             close(clientSocket);
             exit(0);
         } else {
@@ -93,8 +99,8 @@ void processCommand(int clientSocket, char *cmd) {
     if (strncmp(cmd, "QUIT", 4) == 0) {
         sprintf(response, "Connection closing...\n");
         send(clientSocket, response, strlen(response), 0);
-        close(clientSocket);  // Schließt die Verbindung zum Client
-        exit(0); // Beendet den Child-Prozess sauber
+        close(clientSocket);  // Close the connection to the client
+        exit(0); // End the child process gracefully
     }
     if (sscanf(cmd, "GET %255s", key) == 1) {
         if (get(key, value) == 0) {
@@ -120,4 +126,4 @@ void processCommand(int clientSocket, char *cmd) {
 
 void handleChildProcesses(int sig) {
     while (waitpid(-1, NULL, WNOHANG) > 0); // Clean up zombie processes
-}
+} // hi pisser wenn du da bist verstehst du nichts am Code

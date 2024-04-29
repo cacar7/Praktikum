@@ -21,6 +21,7 @@ int main() {
     struct sockaddr_in address;
     int opt = 1;
     int addrlen = sizeof(address);
+    int clientID = 1; // Initial client ID
 
     initializeStore();
     signal(SIGCHLD, handleChildProcesses);
@@ -54,8 +55,6 @@ int main() {
     printf("Welcome to Key-Value Store Server Team 6\n");
     printf("Enter QUIT to stop the server\n\n");
 
-    srand(time(NULL)); // Seed for random ID generation
-
     while (1) {
         clientSocket = accept(serverSocket, (struct sockaddr *)&address, (socklen_t*)&addrlen);
         if (clientSocket < 0) {
@@ -63,12 +62,11 @@ int main() {
             continue;
         }
 
-        printf("\nNew client connected. Client socket: %d\n", clientSocket);
+        printf("\nNew client connected. Client socket: %d, Client ID: %d\n", clientSocket, clientID);
 
         if (fork() == 0) { // Child process
             close(serverSocket);
             char buffer[BUFFER_SIZE];
-            int clientID = rand() % 1000 + 1; // Generate a random ID for the client
             while (1) {
                 memset(buffer, 0, BUFFER_SIZE);
                 int readBytes = read(clientSocket, buffer, BUFFER_SIZE - 1);
@@ -90,6 +88,7 @@ int main() {
             exit(0);
         } else {
             close(clientSocket); // Parent closes the child's socket
+            clientID++; // Increment client ID for the next client
         }
     }
 

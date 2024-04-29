@@ -6,6 +6,7 @@
 #include <netinet/in.h>
 #include <signal.h>
 #include <sys/wait.h>
+#include <time.h>
 
 #include "keyValStore.h"
 
@@ -53,6 +54,8 @@ int main() {
     printf("Welcome to Key-Value Store Server Team 6\n");
     printf("Enter QUIT to stop the server\n\n");
 
+    srand(time(NULL)); // Seed for random ID generation
+
     while (1) {
         clientSocket = accept(serverSocket, (struct sockaddr *)&address, (socklen_t*)&addrlen);
         if (clientSocket < 0) {
@@ -60,11 +63,12 @@ int main() {
             continue;
         }
 
-        printf("New client connected. Client socket: %d\n", clientSocket);
+        printf("\nNew client connected. Client socket: %d\n", clientSocket);
 
         if (fork() == 0) { // Child process
             close(serverSocket);
             char buffer[BUFFER_SIZE];
+            int clientID = rand() % 1000 + 1; // Generate a random ID for the client
             while (1) {
                 memset(buffer, 0, BUFFER_SIZE);
                 int readBytes = read(clientSocket, buffer, BUFFER_SIZE - 1);
@@ -77,11 +81,11 @@ int main() {
                 }
 
                 buffer[readBytes] = '\0';
-                printf("Received command from client %d: %s\n", clientSocket, buffer);
+                printf("Received command from client %d (ID: %d): %s\n", clientSocket, clientID, buffer);
                 processCommand(clientSocket, buffer);
             }
 
-            printf("Client %d disconnected.\n", clientSocket);
+            printf("Client %d (ID: %d) disconnected.\n", clientSocket, clientID);
             close(clientSocket);
             exit(0);
         } else {
@@ -104,21 +108,21 @@ void processCommand(int clientSocket, char *cmd) {
     }
     if (sscanf(cmd, "GET %255s", key) == 1) {
         if (get(key, value) == 0) {
-            sprintf(response, "GET:%s:%s", key, value);
+            sprintf(response, "GET: %s => %s\n", key, value);
         } else {
-            sprintf(response, "GET:%s:key_nonexistent", key);
+            sprintf(response, "GET: %s => Key does not exist\n", key);
         }
     } else if (sscanf(cmd, "PUT %255s %255s", key, value) == 2) {
         put(key, value);
-        sprintf(response, "PUT:%s:%s", key, value);
+        sprintf(response, "PUT: %s => %s\n", key, value);
     } else if (sscanf(cmd, "DEL %255s", key) == 1) {
         if (del(key) == 0) {
-            sprintf(response, "DEL:%s:key_deleted", key);
+            sprintf(response, "DEL: %s => Key deleted\n", key);
         } else {
-            sprintf(response, "DEL:%s:key_nonexistent", key);
+            sprintf(response, "DEL: %s => Key does not exist\n", key);
         }
     } else {
-        sprintf(response, "Invalid command");
+        sprintf(response, "Invalid command\n");
     }
 
     send(clientSocket, response, strlen(response), 0);
@@ -126,4 +130,4 @@ void processCommand(int clientSocket, char *cmd) {
 
 void handleChildProcesses(int sig) {
     while (waitpid(-1, NULL, WNOHANG) > 0); // Clean up zombie processes
-} // hi pisser wenn du da bist verstehst du nichts am Code
+}

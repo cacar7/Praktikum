@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Praktikum.dir/main.c.o"
-  "CMakeFiles/Praktikum.dir/p1.c.o"
+  "CMakeFiles/Praktikum.dir/keyValStore.c.o"
+  "CMakeFiles/Praktikum.dir/sub.c.o"
+  "CMakeFiles/Praktikum.dir/server.c.o"
   "Praktikum.pdb"
   "Praktikum"
 )

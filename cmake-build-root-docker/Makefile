@@ -123,6 +123,33 @@ Praktikum/fast:
 	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/build
 .PHONY : Praktikum/fast
 
+keyValStore.o: keyValStore.c.o
+
+.PHONY : keyValStore.o
+
+# target to build an object file
+keyValStore.c.o:
+	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/keyValStore.c.o
+.PHONY : keyValStore.c.o
+
+keyValStore.i: keyValStore.c.i
+
+.PHONY : keyValStore.i
+
+# target to preprocess a source file
+keyValStore.c.i:
+	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/keyValStore.c.i
+.PHONY : keyValStore.c.i
+
+keyValStore.s: keyValStore.c.s
+
+.PHONY : keyValStore.s
+
+# target to generate assembly for a file
+keyValStore.c.s:
+	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/keyValStore.c.s
+.PHONY : keyValStore.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -150,32 +177,59 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/main.c.s
 .PHONY : main.c.s
 
-p1.o: p1.c.o
+server.o: server.c.o
 
-.PHONY : p1.o
+.PHONY : server.o
 
 # target to build an object file
-p1.c.o:
-	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/p1.c.o
-.PHONY : p1.c.o
+server.c.o:
+	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/server.c.o
+.PHONY : server.c.o
 
-p1.i: p1.c.i
+server.i: server.c.i
 
-.PHONY : p1.i
+.PHONY : server.i
 
 # target to preprocess a source file
-p1.c.i:
-	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/p1.c.i
-.PHONY : p1.c.i
+server.c.i:
+	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/server.c.i
+.PHONY : server.c.i
 
-p1.s: p1.c.s
+server.s: server.c.s
 
-.PHONY : p1.s
+.PHONY : server.s
 
 # target to generate assembly for a file
-p1.c.s:
-	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/p1.c.s
-.PHONY : p1.c.s
+server.c.s:
+	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/server.c.s
+.PHONY : server.c.s
+
+sub.o: sub.c.o
+
+.PHONY : sub.o
+
+# target to build an object file
+sub.c.o:
+	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/sub.c.o
+.PHONY : sub.c.o
+
+sub.i: sub.c.i
+
+.PHONY : sub.i
+
+# target to preprocess a source file
+sub.c.i:
+	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/sub.c.i
+.PHONY : sub.c.i
+
+sub.s: sub.c.s
+
+.PHONY : sub.s
+
+# target to generate assembly for a file
+sub.c.s:
+	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/sub.c.s
+.PHONY : sub.c.s
 
 # Help Target
 help:
@@ -186,12 +240,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Praktikum"
 	@echo "... edit_cache"
+	@echo "... keyValStore.o"
+	@echo "... keyValStore.i"
+	@echo "... keyValStore.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... p1.o"
-	@echo "... p1.i"
-	@echo "... p1.s"
+	@echo "... server.o"
+	@echo "... server.i"
+	@echo "... server.s"
+	@echo "... sub.o"
+	@echo "... sub.i"
+	@echo "... sub.s"
 .PHONY : help
 
 

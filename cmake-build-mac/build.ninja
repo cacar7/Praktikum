@@ -55,8 +55,20 @@ build CMakeFiles/Praktikum.dir/main.c.o: C_COMPILER__Praktikum_unscanned_Debug /
   OBJECT_DIR = CMakeFiles/Praktikum.dir
   OBJECT_FILE_DIR = CMakeFiles/Praktikum.dir
 
-build CMakeFiles/Praktikum.dir/p1.c.o: C_COMPILER__Praktikum_unscanned_Debug /Users/cemacar/Developer/BS/Praktikum/p1.c || cmake_object_order_depends_target_Praktikum
-  DEP_FILE = CMakeFiles/Praktikum.dir/p1.c.o.d
+build CMakeFiles/Praktikum.dir/keyValStore.c.o: C_COMPILER__Praktikum_unscanned_Debug /Users/cemacar/Developer/BS/Praktikum/keyValStore.c || cmake_object_order_depends_target_Praktikum
+  DEP_FILE = CMakeFiles/Praktikum.dir/keyValStore.c.o.d
+  FLAGS = -g -std=gnu99 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Praktikum.dir
+  OBJECT_FILE_DIR = CMakeFiles/Praktikum.dir
+
+build CMakeFiles/Praktikum.dir/sub.c.o: C_COMPILER__Praktikum_unscanned_Debug /Users/cemacar/Developer/BS/Praktikum/sub.c || cmake_object_order_depends_target_Praktikum
+  DEP_FILE = CMakeFiles/Praktikum.dir/sub.c.o.d
+  FLAGS = -g -std=gnu99 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Praktikum.dir
+  OBJECT_FILE_DIR = CMakeFiles/Praktikum.dir
+
+build CMakeFiles/Praktikum.dir/server.c.o: C_COMPILER__Praktikum_unscanned_Debug /Users/cemacar/Developer/BS/Praktikum/server.c || cmake_object_order_depends_target_Praktikum
+  DEP_FILE = CMakeFiles/Praktikum.dir/server.c.o.d
   FLAGS = -g -std=gnu99 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/Praktikum.dir
   OBJECT_FILE_DIR = CMakeFiles/Praktikum.dir
@@ -69,7 +81,7 @@ build CMakeFiles/Praktikum.dir/p1.c.o: C_COMPILER__Praktikum_unscanned_Debug /Us
 #############################################
 # Link the executable Praktikum
 
-build Praktikum: C_EXECUTABLE_LINKER__Praktikum_Debug CMakeFiles/Praktikum.dir/main.c.o CMakeFiles/Praktikum.dir/p1.c.o
+build Praktikum: C_EXECUTABLE_LINKER__Praktikum_Debug CMakeFiles/Praktikum.dir/main.c.o CMakeFiles/Praktikum.dir/keyValStore.c.o CMakeFiles/Praktikum.dir/sub.c.o CMakeFiles/Praktikum.dir/server.c.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   OBJECT_DIR = CMakeFiles/Praktikum.dir
   POST_BUILD = :

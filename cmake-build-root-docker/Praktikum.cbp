@@ -78,10 +78,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/tmp/PrakBS24/keyValStore.c">
+			<Option target="Praktikum"/>
+		</Unit>
+		<Unit filename="/tmp/PrakBS24/keyValStore.h">
+			<Option target="Praktikum"/>
+		</Unit>
 		<Unit filename="/tmp/PrakBS24/main.c">
 			<Option target="Praktikum"/>
 		</Unit>
-		<Unit filename="/tmp/PrakBS24/p1.c">
+		<Unit filename="/tmp/PrakBS24/main.h">
+			<Option target="Praktikum"/>
+		</Unit>
+		<Unit filename="/tmp/PrakBS24/server.c">
+			<Option target="Praktikum"/>
+		</Unit>
+		<Unit filename="/tmp/PrakBS24/sub.c">
+			<Option target="Praktikum"/>
+		</Unit>
+		<Unit filename="/tmp/PrakBS24/sub.h">
 			<Option target="Praktikum"/>
 		</Unit>
 		<Unit filename="/tmp/PrakBS24/CMakeLists.txt">

@@ -81,43 +81,95 @@ CMakeFiles/Praktikum.dir/main.c.o.provides: CMakeFiles/Praktikum.dir/main.c.o.re
 CMakeFiles/Praktikum.dir/main.c.o.provides.build: CMakeFiles/Praktikum.dir/main.c.o
 
 
-CMakeFiles/Praktikum.dir/p1.c.o: CMakeFiles/Praktikum.dir/flags.make
-CMakeFiles/Praktikum.dir/p1.c.o: ../p1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/PrakBS24/cmake-build-root-docker/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Praktikum.dir/p1.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Praktikum.dir/p1.c.o   -c /tmp/PrakBS24/p1.c
+CMakeFiles/Praktikum.dir/keyValStore.c.o: CMakeFiles/Praktikum.dir/flags.make
+CMakeFiles/Praktikum.dir/keyValStore.c.o: ../keyValStore.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/PrakBS24/cmake-build-root-docker/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Praktikum.dir/keyValStore.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Praktikum.dir/keyValStore.c.o   -c /tmp/PrakBS24/keyValStore.c
 
-CMakeFiles/Praktikum.dir/p1.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Praktikum.dir/p1.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/PrakBS24/p1.c > CMakeFiles/Praktikum.dir/p1.c.i
+CMakeFiles/Praktikum.dir/keyValStore.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Praktikum.dir/keyValStore.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/PrakBS24/keyValStore.c > CMakeFiles/Praktikum.dir/keyValStore.c.i
 
-CMakeFiles/Praktikum.dir/p1.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Praktikum.dir/p1.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/PrakBS24/p1.c -o CMakeFiles/Praktikum.dir/p1.c.s
+CMakeFiles/Praktikum.dir/keyValStore.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Praktikum.dir/keyValStore.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/PrakBS24/keyValStore.c -o CMakeFiles/Praktikum.dir/keyValStore.c.s
 
-CMakeFiles/Praktikum.dir/p1.c.o.requires:
+CMakeFiles/Praktikum.dir/keyValStore.c.o.requires:
 
-.PHONY : CMakeFiles/Praktikum.dir/p1.c.o.requires
+.PHONY : CMakeFiles/Praktikum.dir/keyValStore.c.o.requires
 
-CMakeFiles/Praktikum.dir/p1.c.o.provides: CMakeFiles/Praktikum.dir/p1.c.o.requires
-	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/p1.c.o.provides.build
-.PHONY : CMakeFiles/Praktikum.dir/p1.c.o.provides
+CMakeFiles/Praktikum.dir/keyValStore.c.o.provides: CMakeFiles/Praktikum.dir/keyValStore.c.o.requires
+	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/keyValStore.c.o.provides.build
+.PHONY : CMakeFiles/Praktikum.dir/keyValStore.c.o.provides
 
-CMakeFiles/Praktikum.dir/p1.c.o.provides.build: CMakeFiles/Praktikum.dir/p1.c.o
+CMakeFiles/Praktikum.dir/keyValStore.c.o.provides.build: CMakeFiles/Praktikum.dir/keyValStore.c.o
+
+
+CMakeFiles/Praktikum.dir/sub.c.o: CMakeFiles/Praktikum.dir/flags.make
+CMakeFiles/Praktikum.dir/sub.c.o: ../sub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/PrakBS24/cmake-build-root-docker/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Praktikum.dir/sub.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Praktikum.dir/sub.c.o   -c /tmp/PrakBS24/sub.c
+
+CMakeFiles/Praktikum.dir/sub.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Praktikum.dir/sub.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/PrakBS24/sub.c > CMakeFiles/Praktikum.dir/sub.c.i
+
+CMakeFiles/Praktikum.dir/sub.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Praktikum.dir/sub.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/PrakBS24/sub.c -o CMakeFiles/Praktikum.dir/sub.c.s
+
+CMakeFiles/Praktikum.dir/sub.c.o.requires:
+
+.PHONY : CMakeFiles/Praktikum.dir/sub.c.o.requires
+
+CMakeFiles/Praktikum.dir/sub.c.o.provides: CMakeFiles/Praktikum.dir/sub.c.o.requires
+	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/sub.c.o.provides.build
+.PHONY : CMakeFiles/Praktikum.dir/sub.c.o.provides
+
+CMakeFiles/Praktikum.dir/sub.c.o.provides.build: CMakeFiles/Praktikum.dir/sub.c.o
+
+
+CMakeFiles/Praktikum.dir/server.c.o: CMakeFiles/Praktikum.dir/flags.make
+CMakeFiles/Praktikum.dir/server.c.o: ../server.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/PrakBS24/cmake-build-root-docker/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Praktikum.dir/server.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Praktikum.dir/server.c.o   -c /tmp/PrakBS24/server.c
+
+CMakeFiles/Praktikum.dir/server.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Praktikum.dir/server.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/PrakBS24/server.c > CMakeFiles/Praktikum.dir/server.c.i
+
+CMakeFiles/Praktikum.dir/server.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Praktikum.dir/server.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/PrakBS24/server.c -o CMakeFiles/Praktikum.dir/server.c.s
+
+CMakeFiles/Praktikum.dir/server.c.o.requires:
+
+.PHONY : CMakeFiles/Praktikum.dir/server.c.o.requires
+
+CMakeFiles/Praktikum.dir/server.c.o.provides: CMakeFiles/Praktikum.dir/server.c.o.requires
+	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/server.c.o.provides.build
+.PHONY : CMakeFiles/Praktikum.dir/server.c.o.provides
+
+CMakeFiles/Praktikum.dir/server.c.o.provides.build: CMakeFiles/Praktikum.dir/server.c.o
 
 
 # Object files for target Praktikum
 Praktikum_OBJECTS = \
 "CMakeFiles/Praktikum.dir/main.c.o" \
-"CMakeFiles/Praktikum.dir/p1.c.o"
+"CMakeFiles/Praktikum.dir/keyValStore.c.o" \
+"CMakeFiles/Praktikum.dir/sub.c.o" \
+"CMakeFiles/Praktikum.dir/server.c.o"
 
 # External object files for target Praktikum
 Praktikum_EXTERNAL_OBJECTS =
 
 Praktikum: CMakeFiles/Praktikum.dir/main.c.o
-Praktikum: CMakeFiles/Praktikum.dir/p1.c.o
+Praktikum: CMakeFiles/Praktikum.dir/keyValStore.c.o
+Praktikum: CMakeFiles/Praktikum.dir/sub.c.o
+Praktikum: CMakeFiles/Praktikum.dir/server.c.o
 Praktikum: CMakeFiles/Praktikum.dir/build.make
 Praktikum: CMakeFiles/Praktikum.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/PrakBS24/cmake-build-root-docker/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Praktikum"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/PrakBS24/cmake-build-root-docker/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Praktikum"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Praktikum.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -126,7 +178,9 @@ CMakeFiles/Praktikum.dir/build: Praktikum
 .PHONY : CMakeFiles/Praktikum.dir/build
 
 CMakeFiles/Praktikum.dir/requires: CMakeFiles/Praktikum.dir/main.c.o.requires
-CMakeFiles/Praktikum.dir/requires: CMakeFiles/Praktikum.dir/p1.c.o.requires
+CMakeFiles/Praktikum.dir/requires: CMakeFiles/Praktikum.dir/keyValStore.c.o.requires
+CMakeFiles/Praktikum.dir/requires: CMakeFiles/Praktikum.dir/sub.c.o.requires
+CMakeFiles/Praktikum.dir/requires: CMakeFiles/Praktikum.dir/server.c.o.requires
 
 .PHONY : CMakeFiles/Praktikum.dir/requires
 

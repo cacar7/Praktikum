@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /tmp/PrakBS24/cmake-build-root-docker
 CMakeFiles/Praktikum.dir/all:
 	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/depend
 	$(MAKE) -f CMakeFiles/Praktikum.dir/build.make CMakeFiles/Praktikum.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/PrakBS24/cmake-build-root-docker/CMakeFiles --progress-num=1,2,3 "Built target Praktikum"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/PrakBS24/cmake-build-root-docker/CMakeFiles --progress-num=1,2,3,4,5 "Built target Praktikum"
 .PHONY : CMakeFiles/Praktikum.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/Praktikum.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Praktikum.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/PrakBS24/cmake-build-root-docker/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/PrakBS24/cmake-build-root-docker/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Praktikum.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/PrakBS24/cmake-build-root-docker/CMakeFiles 0
 .PHONY : CMakeFiles/Praktikum.dir/rule

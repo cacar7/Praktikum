@@ -23,5 +23,5 @@ int main() {
     // Bereinigung und Schließen des Programms
     cleanupStore();
     return 0;
-    // Cem ist ein gier
+    // Cem ist ein mier
 }

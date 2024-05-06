@@ -2,8 +2,9 @@
 
 <p align="center"> 
    <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/cacar7/Praktikum?style=flat&color=yellow">
-   
-
+   <img alt="Github Created At" src="https://img.shields.io/github/created-at/cacar7/Praktikum">
+   <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues/cacar7/Praktikum">
+   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/cacar7/Praktikum">
 </p>
 
 ## Einleitung

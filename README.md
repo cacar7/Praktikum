@@ -1,11 +1,6 @@
 # Serverprogramm-Praktikum BS Prak24 - Team  6
 
-<p align="center"> 
-<![GitHub last commit](https://img.shields.io/github/last-commit/cacar7/Praktikum)> 
-<![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/cacar7/Praktikum)>
-<![Github Created At](https://img.shields.io/github/created-at/cacar7/Praktikum)>
-<![GitHub watchers](https://img.shields.io/github/watchers/cacar7/Praktikum?style=flat&color=yellow)>
-</p>
+<p align="center"> <![GitHub last commit](https://img.shields.io/github/last-commit/cacar7/Praktikum)> </p>
 
 ## Einleitung
 Dieses Repository enthält den Quellcode für ein Serverprogramm, das im Rahmen des Praktikums für Betriebssysteme an der TH Köln entwickelt wurde. Ziel des Praktikums ist es, ein Serverprogramm in C zu erstellen, das über Sockets Daten von mehreren Clients empfangen, speichern und abfragen kann.

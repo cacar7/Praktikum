@@ -1,10 +1,10 @@
 # Serverprogramm-Praktikum BS Prak24 - Team  6
 
 <p align="center"> 
-<!-- ![GitHub last commit](https://img.shields.io/github/last-commit/cacar7/Praktikum)> 
-<!-- ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/cacar7/Praktikum)>
-<!-- ![Github Created At](https://img.shields.io/github/created-at/cacar7/Praktikum)>
-<!-- ![GitHub watchers](https://img.shields.io/github/watchers/cacar7/Praktikum?style=flat&color=yellow)>
+<![GitHub last commit](https://img.shields.io/github/last-commit/cacar7/Praktikum)> 
+<![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/cacar7/Praktikum)>
+<![Github Created At](https://img.shields.io/github/created-at/cacar7/Praktikum)>
+<![GitHub watchers](https://img.shields.io/github/watchers/cacar7/Praktikum?style=flat&color=yellow)>
 </p>
 
 ## Einleitung

@@ -8,3 +8,5 @@ int del(char * key);
 void cleanupStore();
 
 #endif
+
+//Mier war hier :)

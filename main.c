@@ -20,7 +20,7 @@ int main() {
         printf("Key correctly deleted\n");
     }
 
-    // Bereinigung und Schließen des Programms
+    // Bereinigung und Schließen des Programms.
     cleanupStore();
     return 0;
     // Cem ist ein mier

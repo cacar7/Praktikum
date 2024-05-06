@@ -128,5 +128,6 @@ void processCommand(int clientSocket, char *cmd) {
 }
 
 void handleChildProcesses(int sig) {
-    while (waitpid(-1, NULL, WNOHANG) > 0); // Clean up zombie processes
+    while (waitpid(-1, NULL, WNOHANG) > 0); // Clean up zombie processes.
 }
+

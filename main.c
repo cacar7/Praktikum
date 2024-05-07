@@ -2,6 +2,7 @@
 #include "keyValStore.h"
 #include "sub.h"
 
+
 int main() {
     // Initialisierung des Key-Value-Stores
     initializeStore();
@@ -23,5 +24,5 @@ int main() {
     // Bereinigung und Schließen des Programms.
     cleanupStore();
     return 0;
-    // Cem ist ein mier
+    // Cem ist ein gier
 }

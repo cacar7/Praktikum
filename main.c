@@ -24,5 +24,5 @@ int main() {
     // Bereinigung und Schließen des Programms.
     cleanupStore();
     return 0;
-    // Cem ist ein Iwas
+    // Cem ist ein dulli
 }

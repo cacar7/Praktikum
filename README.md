@@ -48,5 +48,6 @@ Nach dem Start des Servers können Clients sich über TCP verbinden und Befehle 
 - Kais El-Ali
 - Mier Hasan
 - Hiong Jian Hor
+- Melih Güler
 
 Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe die LICENSE.md Datei für Details.
